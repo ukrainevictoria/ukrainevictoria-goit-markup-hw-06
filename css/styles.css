@@ -96,7 +96,7 @@ button {
         padding: 0 15px;
     }
 }
-/* Header*/
+/* Header Mobile*/
 .header-container {
     display: flex;
     align-items: center;
@@ -126,21 +126,53 @@ button {
   }
 
 .header-logo {
-    padding: 24px 0;
+    padding: 16px 0;
     display: block;
 }
 
 .studio {
     color: #2e2f42;
 }
+ .burger-btn {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+ }
 
-.nav-list {
+ .burger-icon {
+    display: block;
+    fill: #2f2f37;
+ }
+
+ /* Header Tablet */
+  @media screen and (min-width: 600px) {
+     .burger-btn {
+         display: none;
+     }
+ }
+ .nav-list {
+     display: flex;
+     gap: 40px;
+     align-items: center;
+     color: #2e2f42;
+ }
+ .address-info {
+     font-style: normal;
+     display: block;
+}
+
+.page-nav {
     display: flex;
-    gap: 40px;
     align-items: center;
+    margin-right: auto;
     color: #2e2f42;
 }
 
+.header-logo {
+    padding: 24px 0;
+    margin-right: 76px;
+    display: block;
+}
 .nav-link {
     display: block;
     padding: 24px 0;
@@ -176,3 +208,83 @@ button {
 .nav-link.current::after {
     opacity: 1;
 }
+
+.address-items {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    margin-left: auto;
+}
+
+.page-nav .web-studio-logo {
+    color: #4d5ae5;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-family: "Raleway", sans-serif;
+    line-height: 1.17;
+}
+
+.page-nav .studio {
+    color: #2e2f42;
+
+}
+
+.page-nav .link-mail,
+.page-nav .link-phone {
+    color: #434455;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.page-nav .link-mail {
+    padding: 24px 40px 24px 332px;
+    color: #434455;
+}
+
+.page-nav .link-phone {
+    padding: 24px 156px 24px 40px;
+    color: #434455;
+}
+.page-nav .link:hover {
+    color: #404bbf;
+}
+
+.page-nav .link:focus {
+    color: #404bbf;
+}
+.contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.contacts-link {
+    display: block;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Header Desctop*/
+@media screen and (min-width: 1158px) {
+    .header-logo {
+         margin-right: 76px;
+}
+}
+.contacts-list {
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+/* .contacts-link {
+    padding: 24px 0;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+} */
