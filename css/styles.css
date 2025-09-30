@@ -74,7 +74,7 @@ button {
 }
 
 
-/* Common Mobile*/
+/* Common Mobile від 0 до 767*/
 .container {
     width: 320px;
     padding-right: 16px;
@@ -84,7 +84,7 @@ button {
 }
 
 /* Common Tablet*/
-@media screen and (min-width: 600px)  {
+@media screen and (min-width: 768px)  {
 .container {
         width: 768px;
     }
@@ -92,7 +92,7 @@ button {
 /* Common Desctop*/
 @media screen and (min-width: 1158px) {
     .container {
-        width: 768px;
+        width: 1158px;
         padding: 0 15px;
     }
 }
@@ -331,9 +331,261 @@ button {
     .mobile-menu-nav-list{
         margin-bottom: auto;
     }
- /* mobile-menu */
-@media screen and (min-width: 600px) {
+           .mobile-menu-nav-content {
+               display: block;
+               margin-right: auto;
+               color: #2e2f42;
+           }
+    
+           .mobile-menu-nav-list {
+               display: block;
+               gap: 40px;
+               align-items: center;
+               color: #2e2f42;
+               margin-bottom: 168px;
+           }
+    
+           .mobile-menu-nav-link {
+               display: block;
+               padding: 24px 0;
+               font-weight: 700;
+               font-size: 36px;
+               line-height: 1.1;
+               letter-spacing: 0.02em;
+               color: #2e2f42;
+               position: relative;
+               transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+           }
+                        
+           .mobile-menu-nav-link.current {
+               position: relative;
+               color: #404bbf;
+           }
+
+           /* Address-mobile */
+            .address-mobile {
+            font-style: normal;
+            display: block;
+    }
+        
+            .contacts-list-mobile {
+               display: block;
+               align-items: center;
+               font-weight: 500;
+               font-size: 20px;
+               line-height: 1.2;
+               color: #434455;
+               letter-spacing: 0.02em;
+               gap: 24px;
+               margin-bottom: 48px;
+        }
+            .contacts-link-mobile {
+                display: block;
+                padding: 24px 0;
+                font-size: 16px;
+                line-height: 150%;
+                letter-spacing: 0.02em;
+                color: #434455;
+                transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            }
+            .contacts-link-mobile.current { 
+                position: relative;
+                color: #4d5ae5;
+            }
+                  .contacts-link-mail,
+                  .contacts-link-phone {
+                      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                  }
+        
+                  .contacts-link:hover {
+                      color: #404bbf;
+                  }
+        
+                  .contacts-link:focus {
+                      color: #404bbf;
+                  }
+        
+                  
+        /* Список соцмереж */
+        .social-media-list {
+            display: flex;
+            gap: 40px;
+            width: 280px;
+        }
+    
+        /* Кожен пункт списку */
+        .social-media-item {
+            width: 40px;
+            height: 40px;
+        }
+    
+        /* Посилання */
+        .social-media-link {
+            width: 100%;
+            height: 100%;
+            background-color: #4d5ae5;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    
+        .social-media-link:hover,
+        .social-media-link:focus {
+            background-color: #31d0aa;
+        }
+    
+        /* Іконки */
+        .social-media-icon {
+            width: 24px;
+            height: 24px;
+            fill: #f4f4fd;
+        }
+    
+        .social-media-container {
+            margin-right: 80px;
+        }
+ 
+        /* Tablet menu */
+    @media screen and (min-width: 600px) {
     .mobile-menu {
      display: none;
     }
+}
+/* Main Content */
+/* Mobile Our Professionalism */
+/* Базове фонове зображення для мобільних телефонів */
+.our-professionalism {
+    margin: 0 auto;
+    background-color: #2e2f42;
+    padding: 188px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url('../images/people-office-mobile1x-min.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+/* 📱 Телефон (ретина / 2x) */
+@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
+only screen and (max-width: 767px) and (min-resolution: 192dpi) {
+    .our-professionalism{
+        background-image: url('../images/people-office-mobile2x-min.jpg');
+    }
+}
+
+.title {
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.01;
+    text-align: center;
+    letter-spacing: 0.02em;
+    max-width: 767px;
+    margin: 64px 52px 200px;
+  
+    
+}
+
+.button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #4d5ae5;
+    color: #ffffff;
+    cursor: pointer;
+    letter-spacing: 0.04em;
+    text-align: center;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    margin: 0 auto;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgb(0 0 0 / 15%);
+    cursor: pointer;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* колір фону при hover та focus */
+.button:hover,
+.button:focus {
+    background-color: #404bbf;
+}
+
+/* Tablet Our Professionalism */
+/* Базове фонове зображення для планшетів */
+/* 📲 Планшет */
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+    .our-professionalism {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url('../images/people-office-tablet1x-min.jpg');
+    }
+}
+/* 📲 Планшет (ретина / 2x) */
+@media only screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-width: 768px) and (max-width: 1157px) and (min-resolution: 192dpi) {
+    .our-professionalism{
+        margin: 0 auto;
+        width: 100%;
+        background-image: url("'../images/people-office-tablet2x-min.jpg");
+    }
+}
+.title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    margin: 0 auto 48px auto;
+}
+/* 💻 Десктоп */
+@media only screen and (min-width: 1158px) {
+    .our-professionalism{
+        background-image: url("'../images/people-office-desctop1x-min.jpg");
+    }
+}
+
+/* 💻 Десктоп (ретина / 2x) */
+@media only screen and (min-width: 1158px) and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+    .our-professionalism{
+        background-image: url("'../images/people-office-desctop2x-min.jpg");
+    }
+}
+
+/* Competence Mobile */
+.competence-icons-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin: 0 auto;
+    max-width: 320px;
+}
+.competence-icon-item{
+    display: none;
+}
+.competence-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #2e2f42;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+.competence-text{
+    color: #434455;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
