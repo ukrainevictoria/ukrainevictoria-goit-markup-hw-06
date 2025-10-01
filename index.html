@@ -61,7 +61,7 @@
         </address>
 
         <!-- Burger-btn -->
-        <button class="burger-btn" type="button"> 
+        <button class="burger-btn" type="button" data-modal-open=""> 
         <svg class="burger-icon" width="24px" height="24px">
         <use href="./images/icons.svg#icon-burger"></use>
         </svg>
@@ -69,9 +69,9 @@
         </div>
 
         <!-- mobile-menu -->
-        <div class="mobile-menu is-open">
+        <div class="mobile-menu" data-modal>
             <div class="container mobile-menu-container">
-        <button type="button" class="mobile-menu-close">
+        <button type="button" class="mobile-menu-close" data-modal-close>
             <svg class="button-icon" width="8" height="8">
                 <use href="./images/icons.svg#icon-close"></use>
             </svg>
@@ -144,7 +144,7 @@
         <section class="our-professionalism">
             <div class="container-professionalism">
             <h1 id="studio" class="title">Effective Solutions for Your Business</h1>
-            <button type="button" class="button">Order Service</button>
+            <button type="button" class="button" data-modal-open>Order Service</button>
         </div>
         </section>
         <!-- Competence -->
@@ -524,10 +524,10 @@
 </footer>
 
        <!-- Backdrop - cірий фон-->
-        <div class="backdrop is-open">
+        <div class="backdrop" data-modal>
             <div class="modal">
                 <!-- кнопка -->
-                <button type="button" class="button-modal-close">
+                <button type="button" class="button-modal-close" data-modal-close>
                     <svg class="button-icon" width="8" height="8">
                         <use href="./images/icons.svg#icon-close"></use>
                     </svg>
@@ -606,4 +606,5 @@
             </div>
         </div>
     </body>
+    <script src="./js/modal.js"></script>
  </html>
