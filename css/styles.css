@@ -378,6 +378,9 @@ button {
                letter-spacing: 0.02em;
                gap: 24px;
             }
+            .contacts-item-mobile{
+                margin-bottom: 24px;
+            }
             .contacts-link-mobile {
                 display: block;
                 font-size: 16px;
@@ -385,7 +388,7 @@ button {
                 letter-spacing: 0.02em;
                 color: #434455;
                 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-                margin-bottom: 24px; 
+                
             }
             .contacts-link-mobile.current { 
                 position: relative;
@@ -483,7 +486,7 @@ only screen and (max-width: 767px) and (min-resolution: 192dpi) {
     text-align: center;
     letter-spacing: 0.02em;
     max-width: 216px;
-    margin: 64px 52px 200px;
+    margin: 0 auto 72px auto;
     
 }
 
@@ -537,17 +540,18 @@ only screen and (min-width: 768px) and (max-width: 1157px) and (min-resolution: 
                 rgba(46, 47, 66, 0.7)),
         url("../images/people-office-tablet2x-min.jpg");
     }
+        .title {
+            color: #fff;
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 1.07;
+            text-align: center;
+            letter-spacing: 0.02em;
+            margin: 0 auto 48px auto;
+            max-width: 496px;
+        }
 }
-.title {
-    color: #fff;
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
-    text-align: center;
-    letter-spacing: 0.02em;
-    margin: 0 auto 48px auto;
-    max-width: 496px;
-}
+
 /* 💻 Десктоп */
 @media only screen and (min-width: 1158px) {
     .our-professionalism{
@@ -610,6 +614,9 @@ only screen and (min-width: 1158px) and (min-resolution: 192dpi) {
 
 /* Competence Tablet*/
 @media screen and (min-width: 768px) {
+    .our-team-list {
+        gap: 64px 24px;
+    }
    .competence-icons-list {
     display: flex;
     flex-direction: row;
@@ -685,10 +692,7 @@ only screen and (min-width: 1158px) and (min-resolution: 192dpi) {
     padding: 96px 0;
     background-color: #F4F4FD;
 }
-  .our-team .container {
-      padding-left: 28px;
-      padding-right: 28px;
-   }
+  
    .team-container-text{
     padding: 32px 0;
    }
@@ -706,6 +710,7 @@ only screen and (min-width: 1158px) and (min-resolution: 192dpi) {
 
 .our-teams-list {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     gap: 72px;
@@ -839,6 +844,10 @@ only screen and (min-width: 1158px) and (min-resolution: 192dpi) {
         box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
                 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     }
+    
+        .our-portfolio-item:hover .portfolio-overlay {
+            transform: translateY(0%);
+        }
     .portfolio-text-container{
         padding: 32px 16px;
         border: 1px solid #e7e9fc;
@@ -880,9 +889,20 @@ only screen and (min-width: 1158px) and (min-resolution: 192dpi) {
                 0px 1px 1px rgba(46, 47, 66, 0.16),
                 0px 2px 1px rgba(46, 47, 66, 0.08);
         }
-        
-        .portfolio-item:hover .portfolio-overlay {
-            transform: translateY(0);
+                 /* Overlay-текст */
+        .our-portfolio-item:hover .portfolio-overlay {
+            transform: translateY(0%);
+            background-color: #4d5ae5;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+            color: var(--text-light, #f4f4fd);
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            padding: 40px 32px;
+            transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
         
         .img-thumb {
@@ -1012,7 +1032,8 @@ only screen and (min-width: 1158px) and (min-resolution: 192dpi) {
             margin-bottom: 16px;
           }
           
-         .footer-form-text{
+         .footer-form-text {
+            text-align: center;
             font-weight: 500;
             font-size: 16px;
             line-height: 1.5;
@@ -1157,7 +1178,6 @@ only screen and (min-width: 1158px) and (min-resolution: 192dpi) {
         
         .is-open{
             opacity: 1;
-            visibility: visible;
             pointer-events: auto;
         }
     
@@ -1326,7 +1346,7 @@ only screen and (min-width: 1158px) and (min-resolution: 192dpi) {
     cursor: pointer;
 }
 .check-box {
-    flex flex-shrink: 0;
+    flex-shrink: 0;
     display: inline-flex;
     align-items: center;
     justify-content: center;
